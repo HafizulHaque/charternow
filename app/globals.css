@@ -6,3 +6,19 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+
+.cstm-table {
+  @apply min-w-full bg-white border border-gray-200 rounded-lg;
+}
+
+.cstm-table-header {
+  @apply bg-gray-100 px-6 py-3 text-left text-sm font-semibold text-gray-600 border-b;
+}
+
+.cstm-table-cell {
+  @apply px-6 py-4 text-sm text-gray-700 border-b;
+}
+
+.cstm-table-row:hover {
+  @apply bg-gray-50;
+}
