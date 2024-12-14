@@ -7,6 +7,19 @@
   --foreground: #171717;
 }
 
+
+.navItem {
+  @apply px-1 py-2 hover:text-cstmTeal text-xl font-normal  border-b-4 border-transparent hover:border-cstmTeal;
+}
+
+
+
+
+
+
+
+
+/* // test table css  */
 .cstm-table {
   @apply min-w-full bg-white border border-gray-200 rounded-lg;
 }

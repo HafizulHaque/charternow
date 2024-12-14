@@ -9,9 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        cstmTeal: '#007B8A'
       },
+      backgroundImage: {
+        "carousel-img-1": "url('/carousel-image-car.svg')"
+      }
     },
   },
   plugins: [],
