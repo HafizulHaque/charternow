@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import Branding from "@/components/Branding";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       </header> */}
       <main>
         <Hero/>
+        <Branding/>
       </main>
     </>
   );
