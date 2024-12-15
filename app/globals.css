@@ -12,6 +12,10 @@
   @apply px-1 py-2 hover:text-cstmTeal text-xl font-normal  border-b-4 border-transparent hover:border-cstmTeal;
 }
 
+.glassmorph {
+  @apply bg-white/15 backdrop-blur-sm;
+}
+
 
 
 

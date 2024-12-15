@@ -27,7 +27,7 @@ const Navbar = () => {
             <User size={24}/>
           </div>
         </Link>
-        <div className="bg-cstmTeal p-2 rounded-full text-white cursor-pointer">
+        <div className="bg-cstmTeal hover:bg-cstmTeal/80 p-2 rounded-full text-white cursor-pointer">
           <Menu size={24}/>
         </div>
         

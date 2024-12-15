@@ -10,7 +10,7 @@ const Branding = () => {
         <p className="text-2xl leading-[1.8] w-[80ch] mx-auto mt-2">Discover vehicles tailored to your trip, powered by cutting-edge AI insights. From scenic routes to dynamic itineraries, we make every journey unforgettable.</p>
       </div>
 
-      <div className="my-32 flex flex-col gap-y-32">
+      <div className="my-32 flex flex-col gap-y-48">
 
         <div className="flex items-center gap-x-16">
           <div className="flex-1">
@@ -23,7 +23,7 @@ const Branding = () => {
               <li className="text-xl"><Check className="inline mr-2 text-cstmTeal"/>No paperwork, no hassel</li>
               <li className="text-xl"><Check className="inline mr-2 text-cstmTeal"/>Book a boat, car and motorcycle in one place</li>
             </ul>
-            <button className="bg-cstmTeal text-white px-4 py-2 text-xl rounded-full">Plan Your Trip</button>
+            <button className="bg-cstmTeal hover:bg-cstmTeal/80 text-white px-4 py-2 text-xl rounded-full">Plan Your Trip</button>
           </div>
         </div>
 
