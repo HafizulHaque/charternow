@@ -10,7 +10,7 @@ const Branding = () => {
         <p className="text-2xl leading-[1.8] w-[80ch] mx-auto mt-2">Discover vehicles tailored to your trip, powered by cutting-edge AI insights. From scenic routes to dynamic itineraries, we make every journey unforgettable.</p>
       </div>
 
-      <div className="my-32 flex flex-col gap-y-48">
+      <div className="mt-32 flex flex-col gap-y-48">
 
         <div className="flex items-center gap-x-16">
           <div className="flex-1">

@@ -12,7 +12,10 @@ export default {
         cstmTeal: '#007B8A'
       },
       backgroundImage: {
-        "carousel-img-1": "url('/carousel-image-car.svg')"
+        "carousel-img-1": "url('/carousel-image-car.svg')",
+        "car-service": "url('/range-rover.svg')",
+        "bike-service": "url('/vespa.svg')",
+        "boat-service": "url('/party-boat.svg')"
       }
     },
   },
