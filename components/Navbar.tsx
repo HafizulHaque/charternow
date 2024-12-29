@@ -4,18 +4,21 @@ import { User, Menu } from "lucide-react"
 
 const Navbar = () => {
   return (
-    <header className="px-8 py-6 flex items-center justify-between">
+    <header className="h-[90px] px-8 py-6 flex items-center justify-between">
+      
       <div>
         <Link href={'/'} className="flex items-center">
           <Image src={`logo.svg`} height={50} width={50} alt="logo"/>
           <h1 className="ml-2 text-2xl font-medium text-cstmTeal">Charter Now</h1>
         </Link>
       </div>
+
       <div className="flex items-center gap-x-4">
         <Link className="navItem" href={'#car'}>Car</Link>
         <Link className="navItem" href={'#motorcycle'}>Motorcycle</Link>
         <Link className="navItem" href={'#boat'}>Boat</Link>
       </div>
+
       <div className="flex items-center gap-x-4">
         <Link 
           className="px-1 py-2 hover:text-cstmTeal text-xl" 

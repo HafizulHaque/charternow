@@ -2,7 +2,7 @@ import { Search } from "lucide-react"
 
 const Hero = () => {
   return (
-    <div className="px-48 pt-8 pb-2 flex flex-col bg-carousel-img-1 h-[600px] bg-cover bg-center">
+    <div className="px-48 pt-12 pb-4 flex flex-col bg-carousel-img-1 h-[calc(100vh-90px)] bg-cover bg-center">
       <div className="flex-1 flex flex-col justify-between">
         <div className="glassmorph px-8 text-white rounded-full">
           <div className="flex flex-row divide-x divide-white/50">

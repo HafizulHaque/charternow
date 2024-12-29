@@ -111,7 +111,7 @@ const Recommendation = () => {
   };
 
   return (
-    <div className="px-48 my-16">
+    <div className="px-48 mt-16 mb-24">
       <h2 className="text-3xl font-bold text-center my-8">Customer Stories</h2>
       <Slider {...sliderSettings}>
         {clients.map((client, index) => <SlideItem key={index} client={client}/>)}
