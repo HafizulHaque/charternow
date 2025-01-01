@@ -3,17 +3,52 @@
 @tailwind utilities;
 
 :root {
+  --font-poppins: 'Poppins', sans-serif;
   --background: #ffffff;
   --foreground: #171717;
 }
 
+body {
+  font-family: var(--font-poppins);
+}
+
+/* Set default icon color for date input */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Invert the color to white */
+}
+
+/* Set default icon color for time input */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Invert the color to white */
+}
+
+input[type="text"]::placeholder {
+  color: #ffffff;
+}
+
+option {
+  color: #171717;
+}
+
 
 .navItem {
-  @apply px-1 py-2 hover:text-cstmTeal text-xl font-normal  border-b-4 border-transparent hover:border-cstmTeal;
+  @apply px-1 py-2 hover:text-cstmTeal text-xl font-normal border-b-4 border-transparent cursor-pointer;
+}
+
+.navItem-active {
+  @apply text-cstmTeal border-cstmTeal;
 }
 
 .glassmorph {
-  @apply bg-white/15 backdrop-blur-sm;
+  @apply bg-white/20 backdrop-blur-sm;
+}
+
+.filter-input-label {
+  @apply text-lg font-medium px-2;
+}
+
+.filter-input {
+  @apply w-full px-2 py-1 border-0 outline-none bg-white/10 focus:bg-white/40 hover:bg-white/40 rounded-full;
 }
 
 

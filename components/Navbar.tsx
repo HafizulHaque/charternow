@@ -1,8 +1,21 @@
+'use client'
+
 import Image from "next/image"
 import Link from "next/link"
 import { User, Menu } from "lucide-react"
+import { useAppContext } from "@/context/AppContext"
 
 const Navbar = () => {
+
+  let { state: { vehicleType }, setStateValue } = useAppContext()
+
+  const handleVehicleTypeSelect = (e: React.MouseEvent<HTMLElement>) => {
+    let vehicleType = e.currentTarget.getAttribute('data-name') ?? 'car';
+    setStateValue({
+      vehicleType
+    })
+  }
+
   return (
     <header className="h-[90px] px-8 py-6 flex items-center justify-between">
       
@@ -13,10 +26,25 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="flex items-center gap-x-4">
-        <Link className="navItem" href={'#car'}>Car</Link>
-        <Link className="navItem" href={'#motorcycle'}>Motorcycle</Link>
-        <Link className="navItem" href={'#boat'}>Boat</Link>
+      <div className="flex items-center gap-x-6">
+        <p 
+          data-name="car" 
+          className={`navItem ${vehicleType === 'car' ? 'navItem-active': ''}`}
+          onClick={handleVehicleTypeSelect}>
+          Car
+        </p>
+        <p 
+          data-name="motorcycle" 
+          className={`navItem ${vehicleType === 'motorcycle' ? 'navItem-active': ''}`}
+          onClick={handleVehicleTypeSelect}>
+          Motorcycle
+        </p>
+        <p 
+          data-name="boat" 
+          className={`navItem ${vehicleType === 'boat' ? 'navItem-active': ''}`}
+          onClick={handleVehicleTypeSelect}>
+          Boat
+        </p>
       </div>
 
       <div className="flex items-center gap-x-4">
